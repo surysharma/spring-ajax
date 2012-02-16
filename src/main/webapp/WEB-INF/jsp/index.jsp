@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>Simple jsp page</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>
-
-
-
-</head>
-<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    </script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("#clickme").click(alert("This is due!!!"))
+        $(function() {
+            $("#clickme").click(function() {
+                alert("This is due!!!")
+            })
         })
     </script>
+</head>
+<body>
+
 Life without Jquery!!!!sdss
 <button id="clickme" name="testButton">Click me!</button>
 <p>
