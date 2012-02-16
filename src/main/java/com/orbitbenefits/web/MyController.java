@@ -1,6 +1,7 @@
 package com.orbitbenefits.web;
 
 
+import com.orbitbenefits.domain.OptOutForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,7 +17,10 @@ public class MyController {
     }
 
     @RequestMapping(value = "/optout", method = RequestMethod.GET)
-    public @ResponseBody String getAjaxReq() {
-        return "This is a response!!!";
+    public @ResponseBody
+    OptOutForm getAjaxReq() {
+        OptOutForm optOutForm = new OptOutForm();
+        optOutForm.setText("This is a response!!!");
+        return optOutForm;
     }
 }

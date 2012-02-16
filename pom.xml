@@ -188,6 +188,12 @@
             <artifactId>hsqldb</artifactId>
             <version>1.8.0.10</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -219,5 +225,5 @@
             </resource>
         </resources>
     </build>
-    
+
 </project>

@@ -9,6 +9,7 @@
             $("#clickme").click(function() {
                 $.ajax({
                             url:"/optout",
+                            dataType:"json",
                             success: function(data) {
                                 $('p').text(data)
                             }
