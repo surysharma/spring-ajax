@@ -7,7 +7,13 @@
     <script type="text/javascript">
         $(function() {
             $("#clickme").click(function() {
-                alert("This is due!!!")
+                $.ajax({
+                            url:"/optout",
+                            success: function(data) {
+                                $('p').text(data)
+                            }
+                        }
+                )
             })
         })
     </script>
