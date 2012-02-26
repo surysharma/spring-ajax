@@ -15,8 +15,8 @@
     <bean id="flowResourceFlowViewResolver" class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
         <property name="useSpringBeanBinding" value="true"/>
     </bean>
-    <webflow:flow-registry id="flowRegistry" base-path="/WEB-INF/flows/" flow-builder-services="flowBuilderServices">
-        <webflow:flow-location path="/welcome/welcome.xml"/>
+    <webflow:flow-registry id="flowRegistry" base-path="/WEB-INF/" flow-builder-services="flowBuilderServices">
+        <webflow:flow-location path="flows/welcome/welcome.xml"/>
     </webflow:flow-registry>
 
     <!-- Attach FlowHandlerAdapter to flow executor-->
